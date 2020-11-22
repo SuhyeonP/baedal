@@ -4,9 +4,9 @@ import { headerList, user, shop, attend, mainSection } from '../css/layout';
 const AppLayout = ({ children }) => (
   <>
     <ul css={headerList}>
-      {user.map((ele) => <li>{ele}</li>)}
+      {user.map((ele,ind) => <li key={ ind }>{ele}</li>)}
       <br/>
-      {shop.map((element) => <li className="shop">{element}</li>)}
+      {shop.map((element,ind) => <li key={ind} className="shop">{element}</li>)}
     </ul>
     <h2 css={attend}>이용자들은 주문을 할수있고, 가게는 주문을 할수있어요!!</h2>
     <div css={mainSection}>
