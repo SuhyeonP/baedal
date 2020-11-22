@@ -17,7 +17,7 @@
 &nbsp;
 <img src="https://lakue119.github.io/img/skills/mysql.png" width="40px" height="40px"/>
 &nbsp;
-<img src="https://img.favpng.com/13/6/10/node-js-javascript-software-developer-computer-icons-angularjs-png-favpng-0kNgN4r1QbxCLtMPy1uv9yrhw_t.jpg" width="40px" height="40px"/>
+<img src="https://cdn.iconscout.com/icon/free/png-512/node-js-1174925.png" width="40px" height="40px"/>
 &nbsp;
 
 
