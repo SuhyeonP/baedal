@@ -1,30 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 프론트
 
-## Getting Started
+프로젝트의 프론트 부분입니다.
+사용된 기술은
+### React + Next.js + typeScript + emotion + Redux
+*****
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" width="40px" height="40px"></img>
+<img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2652D04357C6D9AC29" width="40px" height="40px"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png" width="40px" height="40px"></img>
+<img src="https://cdn.iconscout.com/icon/free/png-512/redux-283024.png" width="40px" height="40px"></img>
+<img src="https://miro.medium.com/max/257/1*gGzRmUKNOC_X7klFjTk8EA.png" width="40px" height="40px"></img>
+*****
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+배달의 민족 짝퉁!       
+redux와 redux-saga를 이용하여, 데이터를 요청하고 받습니다.     
+서버사이드 렌더링 (SSR)을 구현할 계획입니다. 프론트 작업이 어느정도 이루어진뒤, 백엔드를 구축후 
+서버사이드 렌더링을 구현합니다.    
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+개발일지는 [블로그](https://blog.naver.com/on10041004) 를 참고해 주세용 😊😊😊
