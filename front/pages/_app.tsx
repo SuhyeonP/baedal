@@ -6,6 +6,7 @@ import withRedux from 'next-redux-wrapper';
 import withReduxSaga from 'next-redux-saga';
 import AppLayout from '../components/Layout';
 import reducer, { IReducerState } from '../reducers';
+import rootSaga from '../saga';
 
 function App({ Component, pageProps }) {
   return (
@@ -25,7 +26,7 @@ const configureStore = (initialState) => {
     ? compose(applyMiddleware(...middlewares))
     : composeWithDevTools(applyMiddleware(...middlewares));
   const store: IStore = createStore(reducer, initialState, enhancer);
-  // store.sagaTask = sagaMiddleware.run(rootSaga);
+  store.sagaTask = sagaMiddleware.run(rootSaga);
   return store;
 };
 

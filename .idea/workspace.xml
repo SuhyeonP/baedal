@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/reducers/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/saga/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1606043328155" duration="76000" />
       <workItem from="1606047302682" duration="6494000" />
       <workItem from="1606086820206" duration="23709000" />
-      <workItem from="1606121063837" duration="7024000" />
+      <workItem from="1606121063837" duration="9321000" />
     </task>
     <servers />
   </component>
