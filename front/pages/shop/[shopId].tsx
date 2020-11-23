@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { CheckSquareOutlined, ControlOutlined, DeleteOutlined, EditOutlined, SettingOutlined } from '@ant-design/icons';
 import { singleShop } from '../../css/shop';
 import useInput from '../../exporthing/useInput';
@@ -14,7 +15,6 @@ const Shop = () => {
   const [menuName, onChangeName] = useInput('');
   const [modifyMode, setModify] = useState(false);
   const [basket, setBasket] = useState(false);
-
 
   const changeName = useCallback((part) => {
     const modiName = prompt('바꿀이름을 적어주세요');
