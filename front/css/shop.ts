@@ -22,7 +22,17 @@ display:block;
        .part-table{
         display:none;
        }
-       
+       .userBag{
+        display:block;
+        text-align:center;
+        border:1px solid green;
+        padding:2px;
+        margin:4px;
+        p{
+            display:inline-block;
+            padding:0 5px;
+        }
+       }
     @media (min-width: 1024px){
         h3{
             font-size:32px;
