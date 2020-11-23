@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "types": ["@emotion/core"],
+
     "lib": [
       "dom",
       "dom.iterable",
@@ -28,3 +28,4 @@
     "node_modules"
   ]
 }
+//"types": ["@emotion/core"],

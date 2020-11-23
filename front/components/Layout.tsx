@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx } from '@emotion/react';
 import Link from 'next/link';
 import * as React from 'react';

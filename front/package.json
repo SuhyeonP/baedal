@@ -19,6 +19,7 @@
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.12.7",
     "@emotion/babel-plugin": "^11.0.0",
     "@emotion/eslint-plugin": "^11.0.0",
     "@types/node": "^14.14.9",

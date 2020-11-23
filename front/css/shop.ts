@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 
 const singleShop = css`
+display:block;
      h3{
             display:block;
             text-align:center;
@@ -12,6 +13,7 @@ const singleShop = css`
         margin:0 auto;
         li{
             display:inline-block;
+            cursor:pointer;
             span{
                 font-size:18px;
             }
@@ -20,18 +22,30 @@ const singleShop = css`
        .part-table{
         display:none;
        }
+       
     @media (min-width: 1024px){
         h3{
             font-size:32px;
         }
         ul{
-        display:inline-flex;
+        display:flex;
         width:40vw;
         justify-content:space-between;
         li{
             padding:5px;
             font-size:25px;
         }
+       }
+       img{
+        width:30vw;
+        margin:15px 0
+       }
+       table{
+        width:50vw;
+        margin:0 auto;
+       }
+       
+       td{      
        }
     }
     @media (max-width: 1023px) and (min-width:678px){}
@@ -45,6 +59,9 @@ const singleShop = css`
             padding:5px;
             font-size:18px;
         }
+       }
+      table{
+        width:100%;
        }
     }
 `;

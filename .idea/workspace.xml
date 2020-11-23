@@ -20,19 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/css/shop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/css/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/exporthing/useInput.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/shopper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/pages/admin/signup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/exporthing/props.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.babelrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/front/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/css/layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/shop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/css/shop.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript JSX" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/front/css/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1606043168913" duration="150000" />
       <workItem from="1606043328155" duration="76000" />
       <workItem from="1606047302682" duration="6494000" />
-      <workItem from="1606086820206" duration="11339000" />
+      <workItem from="1606086820206" duration="23529000" />
     </task>
     <servers />
   </component>
@@ -116,17 +115,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="586" y="198" key="#Inspections" timestamp="1606102958586">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606102958586" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1606038743188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606038743188" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1606049403065">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606106799353">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606049403065" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606106799353" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606038734834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606038734834" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/css/shop.ts</url>
+          <line>50</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
