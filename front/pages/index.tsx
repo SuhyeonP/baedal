@@ -3,6 +3,7 @@ import { jsx } from '@emotion/react';
 import * as React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { shopControl } from '../css/layout';
 import AppLayout from '../components/Layout';
 // todo 가게마다 관리버튼 만들고 redux로 자기 가계일때 관리하기 되게
 // todo redux로 메인가게 가져올거라서 map돌릴 예정
@@ -27,43 +28,41 @@ const Home = () => {
 
   return (
     <>
-      <AppLayout>
-        <ul>
-          {shop6.map((ele, ind) => (
-            <li key={ind}>
-              <img src={link} />
-              <table>
-                <tr>
-                  <th>가게이름:</th>
-                  <td>{ele}</td>
-                </tr>
-                <tr>
-                  <th>종류:</th>
-                  <td>cafe</td>
-                </tr>
-                <tr>
-                  <th>가게주소:</th>
-                  <td>Address</td>
-                </tr>
-                <tr>
-                  <th>대표메뉴:</th>
-                  <td> menu1</td>
-                  <td>menu2</td>
-                </tr>
-              </table>
-              {shop
-                ? (
-                  <button />
-                )
-                : (
-                  <Link href="/shop/1">
-                    <a className="goto-order">주문하러가기</a>
-                  </Link>
-                )}
-            </li>
-          ))}
-        </ul>
-      </AppLayout>
+      <ul>
+        {shop6.map((ele, ind) => (
+          <li className="home-list" key={ind}>
+            <img src={link} />
+            <table className="home-table">
+              <tr>
+                <th>가게이름:</th>
+                <td>{ele}</td>
+              </tr>
+              <tr>
+                <th>종류:</th>
+                <td>cafe</td>
+              </tr>
+              <tr>
+                <th>가게주소:</th>
+                <td>Address</td>
+              </tr>
+              <tr>
+                <th>대표메뉴:</th>
+                <td> menu1</td>
+                <td>menu2</td>
+              </tr>
+            </table>
+            {shop
+              ? (
+                <button css={shopControl} />
+              )
+              : (
+                <Link href="/shop/1">
+                  <a className="goto-order">주문하러가기</a>
+                </Link>
+              )}
+          </li>
+        ))}
+      </ul>
     </>
   );
 };

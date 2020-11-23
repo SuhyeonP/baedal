@@ -8,15 +8,16 @@ const headerList = css`
     padding:2vh 0;
     list-style:none;
     text-align:center;
-   li{
-    display:inline-block;
-    padding:6px;
-    margin:2vh 1vw;
-    background-color:#b7b7b7;
-    border:1px solid black;
-    border-radius:6px;
-    cursor:pointer;
-   }
+    li{
+        display:inline-block;
+        padding:6px;
+        margin:2vh 1vw;
+        background-color:#b7b7b7;
+        border:1px solid black;
+        border-radius:6px;
+        cursor:pointer;
+       }
+       
    
    .shop{
     color:white;
@@ -37,8 +38,9 @@ const mainSection = css`
         list-style:none;
         padding:0;
         text-align:center;
+        position:relative;
       }
-      li{
+      .home-list{
         width:40vh;
         height:40vh;
         display:inline-block;
@@ -55,24 +57,10 @@ const mainSection = css`
             width:90%;
             margin-bottom:1vh;
       }
-      table{
+      .home-table{
         display:block;
         width:90%;
         text-align:left;
-      }
-          
-      button{
-        display:inline-block;
-        width:15px;
-        height:15px;
-        background-color:inherit;
-        border:0;
-        background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_my_5fd9c4.png);
-        background-size: 316px 278px;
-        background-position: -280px -348px;
-        position:absolute;
-        right:1vh;
-        bottom:1vh;
       }
       .goto-order{
         font-size:0;
@@ -88,12 +76,15 @@ const mainSection = css`
         right: 1vh;
         bottom: 1vh;
         border-radius: 50%;
+        &:hover{
+            transform:scale(1.3)
+        }
       }
       @media (min-width: 1024px){
         th{
             width:12vh;
           }  
-        li{
+        .home-list{
             margin:2vh;
             box-shadow: 2px 3px 8px #44444459;
             padding-top:17px;
@@ -117,7 +108,7 @@ const mainSection = css`
           }  
       }
       @media (max-width: 677px){
-        li{
+        .home-list{
             margin:2vh 0;
         }
         td{
@@ -126,13 +117,51 @@ const mainSection = css`
         img{
             margin-bottom:0;
         }
-        table{
+        .home-table{
             margin:1vh;
         }
         
       }
 `;
+const shopControl = css`
+        display:inline-block;
+        width:15px;
+        height:15px;
+        background-color:inherit;
+        border:0;
+        background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_my_5fd9c4.png);
+        background-size: 316px 278px;
+        background-position: -280px -348px;
+        position:absolute;
+        right:1vh;
+        bottom:1vh;
+`;
+const logout = css`
+    display:block;
+    text-align:center;
+    cursor:pointer;
+`;
+const gotoHome = css`
+    position:absolute;
+    cursor:pointer;
+    p{
+        font-size:0;
+    }
+    @media (min-width:1024px){
+        top:6vh;
+        left:19vw;
+        font-size:40px;
+        color:brown;
+    }
+    @media (max-width: 1023px) and (min-width:678px){}
+    @media (max-width:677px){
+        top:6vh;
+        left:5vw;
+        font-size:22px;
+        color:brown;
+    }
+`;
 
 const user = ['user1', 'user2', 'user3'];
 const shop = ['shop1', 'shop2', 'shop3', 'shop4', 'shop5', 'shop6'];
-export { headerList, user, shop, attend, mainSection };
+export { headerList, user, shop, attend, mainSection, shopControl, logout, gotoHome };

@@ -20,7 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/css/shop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/css/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/exporthing/useInput.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/pages/admin/shopper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/pages/admin/signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/css/layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/css/layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/shop/[shopId].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -65,6 +77,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Order\front\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Order\front\css\img" />
     </key>
@@ -80,7 +95,8 @@
       <workItem from="1606035146941" duration="7949000" />
       <workItem from="1606043168913" duration="150000" />
       <workItem from="1606043328155" duration="76000" />
-      <workItem from="1606047302682" duration="6430000" />
+      <workItem from="1606047302682" duration="6494000" />
+      <workItem from="1606086820206" duration="11339000" />
     </task>
     <servers />
   </component>
