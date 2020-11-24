@@ -20,24 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/models/shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/passport/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/passport/local.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/routes/middlewares.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/exporthing/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/config/database.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/nodemon.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/passport/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/models/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/models/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/admin/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/signup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/saga/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/reducers/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/reducers/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/saga/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +97,7 @@
       <workItem from="1606121063837" duration="9709000" />
       <workItem from="1606170996409" duration="4110000" />
       <workItem from="1606175150023" duration="5587000" />
-      <workItem from="1606180791887" duration="6146000" />
+      <workItem from="1606180791887" duration="11933000" />
     </task>
     <servers />
   </component>
@@ -147,9 +135,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606106799353" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606171457973">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606190534137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606171457973" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606190534137" />
   </component>
 </project>

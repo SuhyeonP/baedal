@@ -1,5 +1,5 @@
 const express = require('express');
-const {User}=require('../models')
+const {User,Shop}=require('../models')
 const passport = require('passport');
 const bcrypt = require('bcrypt');
 
@@ -31,6 +31,31 @@ router.post('/login', isNotLoggedIn, (req, res, next) => {
     });
   })(req, res, next);
 });
+
+
+router.post('/slogin', isNotLoggedIn, (req, res, next) => {
+  passport.authenticate('local', (err, user, info) => {
+    if (err) {
+      console.error(err);
+      return next(err);
+    }
+    if (info) {
+      return res.status(401).send(info.reason);
+    }
+    return req.login(user, async (loginErr) => {
+      if (loginErr) {
+        console.error(loginErr);
+        return next(loginErr);
+      }
+      const shopMaster=await Shop.findOne({
+        where:{master:req.body.master},
+        attributes:['id','master','address','shopName']
+      })
+      return res.status(200).json(shopMaster);
+    });
+  })(req, res, next);
+});
+
 
 router.post('/logout', isLoggedIn, (req, res) => {
   req.logout();
@@ -75,6 +100,30 @@ router.post('/', isNotLoggedIn, async (req, res, next) => { // POST /user/
       password: hashedPassword,
     });
     res.status(201).send('ok');
+  } catch (error) {
+    console.error(error);
+    next(error); // status 500
+  }
+});
+
+
+router.post('/shop', isLoggedIn, async (req, res, next) => { // POST /user/
+  try {
+    const shop=await Shop.create({
+      address:req.body.address,
+      master:req.user.id,
+      shopName:req.body.shopName
+    })
+    const complete=await Shop.findOne({
+      where:{id:shop.id},
+      include:[{
+        model:Shop,
+      },{
+        model:User,
+        attributes:['id','nick']
+      }]
+    })
+    res.status(201).json(complete)
   } catch (error) {
     console.error(error);
     next(error); // status 500
