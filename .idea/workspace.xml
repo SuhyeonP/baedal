@@ -20,24 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back/routes/shop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/reducers/shop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/saga/shop.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/models/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/models/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/admin/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/signup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/reducers/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/reducers/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/saga/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/saga/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_document.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/styles/globals.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +35,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -69,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript JSX" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/css/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -110,7 +98,8 @@
       <workItem from="1606175150023" duration="5587000" />
       <workItem from="1606180791887" duration="12042000" />
       <workItem from="1606193492063" duration="6369000" />
-      <workItem from="1606201449294" duration="1231000" />
+      <workItem from="1606201449294" duration="3172000" />
+      <workItem from="1606227143339" duration="2480000" />
     </task>
     <servers />
   </component>
@@ -136,10 +125,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="827" y="410" key="#ESLint" timestamp="1606229555123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="827" y="410" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606229555123" />
     <state x="586" y="198" key="#Inspections" timestamp="1606102958586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606102958586" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606204098588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606204098588" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1606171465005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -148,9 +145,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606201824197" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606190534137">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606204328973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606190534137" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606204328973" />
   </component>
 </project>
