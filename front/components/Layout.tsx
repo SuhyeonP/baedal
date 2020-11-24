@@ -12,7 +12,10 @@ const AppLayout = ({ children }) => {
   const { me } = useSelector((state) => state.user);
   const dispatch = useDispatch();
   const LoginDummy = useCallback((userId) => {
-    dispatch({ type: LOG_IN_REQUEST, data: userId });
+    console.log(userId);
+    dispatch({ type: LOG_IN_REQUEST,
+      data: { userId, password: 'test' },
+    });
   }, []);
 
   const logOut = () => {
@@ -26,7 +29,7 @@ const AppLayout = ({ children }) => {
           <ul css={headerList}>
             {user.map((ele, ind) => <li key={ind} onClick={() => LoginDummy(ele)}>{ele}</li>)}
             <br />
-            {shop.map((element, ind) => <li key={ind} className="shop">{element}</li>)}
+            {shop.map((element, ind) => <li key={ind} onClick={() => LoginDummy(element)} className="shop">{element}</li>)}
             <Link href="/">
               <a css={gotoHome}>
                 <HomeOutlined />
@@ -34,7 +37,12 @@ const AppLayout = ({ children }) => {
               </a>
             </Link>
           </ul>
-        ) : <p css={logout} id="admin-logout" onClick={logOut}>Log out</p>}
+        ) :
+      <>
+        <p css={logout} id="admin-logout" onClick={logOut}>Log out</p>
+        <p>hi {me.nick}</p>
+      </>
+      }
 
       <h2 css={attend}>이용자들은 주문을 할수있고, 가게는 주문을 할수있어요!!</h2>
       <div css={mainSection}>

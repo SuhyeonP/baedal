@@ -1,11 +1,15 @@
-/** @jsx jsx */
 import { jsx } from '@emotion/react';
 import * as React from 'react';
 import { useCallback, useState, useEffect } from 'react';
 import { Form } from 'antd';
+import Router from 'next/router';
+import { useDispatch, useSelector } from 'react-redux';
+import axios from 'axios';
+import { END } from 'redux-saga';
 import useInput from '../../exporthing/useInput';
 import AppLayout from '../../components/Layout';
 import { signup, userOrShop } from '../../css/user';
+import { SIGN_UP_REQUEST, LOG_OUT_REQUEST } from '../../reducers/user';
 
 const Signup = () => {
   const [userId, onChangeId] = useInput('');
@@ -17,6 +21,22 @@ const Signup = () => {
   const [pwCheck, setPwCheck] = useState('');
   const [pwError, setPwError] = useState(false);
 
+  const dispatch = useDispatch();
+
+  const { isSignedUp, me, signUpError } = useSelector((state) => state.user);
+
+  useEffect(() => {
+    if (isSignedUp) {
+      Router.push('/');
+    }
+  }, [isSignedUp]);
+  useEffect(() => {
+    if (signUpError !== '') {
+      alert(signUpError);
+      Router.reload();
+    }
+  }, [signUpError]);
+
   const onChangePwCheck = useCallback((e) => {
     setPwError(e.target.value !== password);
     setPwCheck(e.target.value);
@@ -27,14 +47,16 @@ const Signup = () => {
     if (password !== pwCheck) {
       return setPwError(true);
     }
-    return console.log(userId, nick, password, pwCheck);
+    return dispatch({
+      type: SIGN_UP_REQUEST,
+      data: { userId, nick, password },
+    });
   }, [userId, nick, password, pwCheck]);
   const logOutAndJoin = useCallback(() => {
-    if (sup) {
-      setSignup(true);
+    dispatch({ type: LOG_OUT_REQUEST });
+    if (me) {
       document.getElementById('admin-logout').style.display = 'block';
     } else {
-      setSignup(true);
       const hi = document.getElementById('admin-logout');
       if (hi) {
         hi.style.display = 'none';
@@ -44,8 +66,7 @@ const Signup = () => {
 
   return (
     <>
-      <button css={userOrShop} onClick={logOutAndJoin} typeof="button">로그아웃하고 일반사용자 회원가입</button>
-      {sup
+      {me === null
         ? (
           <div css={signup}>
             <Form onFinish={JoinUs}>
@@ -72,6 +93,7 @@ const Signup = () => {
         )
         : (
           <div css={signup}>
+            <button css={userOrShop} onClick={logOutAndJoin} typeof="button">로그아웃하고 일반사용자 회원가입</button>
             <Form onFinish={JoinUs}>
               <div>
                 <label htmlFor="nick">상점 이름&nbsp;:&nbsp;</label>

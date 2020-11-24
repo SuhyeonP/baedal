@@ -20,13 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/back/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/config/database.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/back/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/models/shop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/passport/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/passport/local.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/routes/middlewares.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/exporthing/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/app.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/config/database.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/nodemon.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/passport/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/pages/admin/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/admin/signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/saga/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/saga/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -96,7 +108,8 @@
       <workItem from="1606086820206" duration="23709000" />
       <workItem from="1606121063837" duration="9709000" />
       <workItem from="1606170996409" duration="4110000" />
-      <workItem from="1606175150023" duration="2387000" />
+      <workItem from="1606175150023" duration="5587000" />
+      <workItem from="1606180791887" duration="6146000" />
     </task>
     <servers />
   </component>
@@ -104,7 +117,8 @@
     <option name="version" value="3" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/back/app.js" />
+        <option value="$PROJECT_DIR$/back/models/index.js" />
+        <option value="$PROJECT_DIR$/back/config/config.js" />
       </list>
     </option>
   </component>

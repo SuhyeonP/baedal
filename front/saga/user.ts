@@ -1,4 +1,4 @@
-import {all, call, delay, fork, put, takeEvery} from 'redux-saga/effects';
+import {all, call, delay, fork, put, takeEvery, takeLatest} from 'redux-saga/effects';
 import axios from 'axios';
 import {
   LOG_IN_FAILURE,
@@ -12,47 +12,23 @@ import {
   SIGN_UP_SUCCESS,
 } from '../reducers/user';
 
-// function logInAPI(loginData) {
-//   // 서버에 요청을 보내는 부분
-//   return axios.post('/user/login', loginData, {
-//     withCredentials: true,
-//   });
-// }
-//
-// function* logIn(action) {
-//   try {
-//     const result = yield call(logInAPI, action.data);
-//     yield put({ // put은 dispatch 동일
-//       type: LOG_IN_SUCCESS,
-//       data: result.data,
-//     });
-//   } catch (e) { // loginAPI 실패
-//     console.error(e);
-//     yield put({
-//       type: LOG_IN_FAILURE,
-//       reason: e.response && e.response.data,
-//     });
-//   }
-// }
-
-function logInAPI(data) {
-  return axios.post('/api/login', data);
+function logInAPI(loginData) {
+  // 서버에 요청을 보내는 부분
+  return axios.post('/user/login', loginData);
 }
 
 function* logIn(action) {
   try {
-    console.log('saga logIn');
-    // const result = yield call(logInAPI);
-    yield delay(1000);
-    yield put({
+    const result = yield call(logInAPI, action.data);
+    yield put({ // put은 dispatch 동일
       type: LOG_IN_SUCCESS,
-      data: action.data,
+      data: result.data,
     });
-  } catch (err) {
-    console.error(err);
+  } catch (e) { // loginAPI 실패
+    console.error(e);
     yield put({
       type: LOG_IN_FAILURE,
-      error: err.response.data,
+      reason: e.response && e.response.data,
     });
   }
 }
@@ -61,43 +37,21 @@ function* watchLogIn() {
   yield takeEvery(LOG_IN_REQUEST, logIn);
 }
 
-// function signUpAPI(signUpData) {
-//   // 서버에 요청을 보내는 부분
-//   return axios.post('/user/', signUpData);
-// }
-//
-// function* signUp(action) {
-//   try {
-//     // yield call(signUpAPI);
-//     yield call(signUpAPI, action.data);
-//     yield put({ // put은 dispatch 동일
-//       type: SIGN_UP_SUCCESS,
-//     });
-//   } catch (e) { // loginAPI 실패
-//     console.error(e);
-//     yield put({
-//       type: SIGN_UP_FAILURE,
-//       error: e,
-//     });
-//   }
-// }
-
-function signUpAPI() {
-  return axios.post('/api/signUp');
+function signUpAPI(signUpData) {
+  return axios.post('/user/', signUpData);
 }
 
-function* signUp() {
+function* signUp(action) {
   try {
-    // const result = yield call(signUpAPI);
-    yield delay(1000);
-    yield put({
+    yield call(signUpAPI, action.data);
+    yield put({ // put은 dispatch 동일
       type: SIGN_UP_SUCCESS,
     });
-  } catch (err) {
-    console.error(err);
+  } catch (e) { // loginAPI 실패
+    console.error(e);
     yield put({
       type: SIGN_UP_FAILURE,
-      error: err.response.data,
+      error: e.response.data,
     });
   }
 }
@@ -108,51 +62,26 @@ function* watchSignUp() {
 
 function logOutAPI() {
   // 서버에 요청을 보내는 부분
-  return axios.post('/user/logout', {}, {
-    withCredentials: true,
-  });
+  return axios.post('/user/logout');
 }
-
-// function* logOut() {
-//   try {
-//     // yield call(logOutAPI);
-//     yield call(logOutAPI);
-//     yield put({ // put은 dispatch 동일
-//       type: LOG_OUT_SUCCESS,
-//     });
-//   } catch (e) { // loginAPI 실패
-//     console.error(e);
-//     yield put({
-//       type: LOG_OUT_FAILURE,
-//       error: e,
-//     });
-//   }
-// }
-
-// function logOutAPI() {
-//   return axios.post('/api/logout');
-// }
 
 function* logOut() {
   try {
-    // const result = yield call(logOutAPI);
-    yield delay(1000);
-    yield put({
+    yield call(logOutAPI);
+    yield put({ // put은 dispatch 동일
       type: LOG_OUT_SUCCESS,
     });
-  } catch (err) {
-    console.error(err);
+  } catch (e) { // loginAPI 실패
+    console.error(e);
     yield put({
       type: LOG_OUT_FAILURE,
-      error: err.response.data,
+      error: e,
     });
   }
 }
-
 function* watchLogOut() {
-  yield takeEvery(LOG_OUT_REQUEST, logOut);
+  yield takeLatest(LOG_OUT_REQUEST, logOut);
 }
-
 // function loadUserAPI(userId) {
 //   // 서버에 요청을 보내는 부분
 //   return axios.get(userId ? `/user/${userId}` : '/user/', {
