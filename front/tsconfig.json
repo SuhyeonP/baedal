@@ -29,3 +29,4 @@
   ]
 }
 //"types": ["@emotion/core"],
+//"esModuleInterop": true,요거덕에 *import할때 *안씀 export declare같은애들거
