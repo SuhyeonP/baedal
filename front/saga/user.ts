@@ -15,7 +15,7 @@ import {
   SIGN_UP_SHOP_REQUEST,
   SIGN_UP_SHOP_SUCCESS,
   SIGN_UP_SHOP_FAILURE,
-  SIGN_UP_SUCCESS,
+  SIGN_UP_SUCCESS, LOAD_USER_REQUEST, LOAD_USER_SUCCESS, LOAD_USER_FAILURE,
 } from '../reducers/user';
 
 function logInAPI(loginData) {
@@ -138,6 +138,34 @@ function* watchShopSignUp() {
   yield takeEvery(SIGN_UP_SHOP_REQUEST, shopSignUp);
 }
 
+function loadUserAPI(userId) {
+  // 서버에 요청을 보내는 부분
+  return axios.get(userId ? `/user/${userId}` : '/user/', {
+    withCredentials: true, // 클라이언트에서 요청 보낼 때는 브라우저가 쿠키를 같이 동봉해줘요
+  }); // 서버사이드렌더링일 때는, 브라우저가 없어요.
+}
+
+function* loadUser(action) {
+  try {
+    const result = yield call(loadUserAPI, action.data);
+    yield put({ // put은 dispatch 동일
+      type: LOAD_USER_SUCCESS,
+      data: result.data,
+      me: !action.data,
+    });
+  } catch (e) { // loginAPI 실패
+    console.error(e);
+    yield put({
+      type: LOAD_USER_FAILURE,
+      error: e,
+    });
+  }
+}
+
+function* watchLoadUser() {
+  yield takeEvery(LOAD_USER_REQUEST, loadUser);
+}
+
 export default function* userSaga() {
   yield all([
     fork(watchLogIn),
@@ -145,34 +173,7 @@ export default function* userSaga() {
     fork(watchSignUp),
     fork(watchShopSignUp),
     fork(watchShopLogIn),
-    // fork(watchLoadUser),
+    fork(watchLoadUser),
   ]);
 }
-// function loadUserAPI(userId) {
-//   // 서버에 요청을 보내는 부분
-//   return axios.get(userId ? `/user/${userId}` : '/user/', {
-//     withCredentials: true, // 클라이언트에서 요청 보낼 때는 브라우저가 쿠키를 같이 동봉해줘요
-//   }); // 서버사이드렌더링일 때는, 브라우저가 없어요.
-// }
-//
-// function* loadUser(action) {
-//   try {
-//     // yield call(loadUserAPI);
-//     const result = yield call(loadUserAPI, action.data);
-//     yield put({ // put은 dispatch 동일
-//       type: LOAD_USER_SUCCESS,
-//       data: result.data,
-//       me: !action.data,
-//     });
-//   } catch (e) { // loginAPI 실패
-//     console.error(e);
-//     yield put({
-//       type: LOAD_USER_FAILURE,
-//       error: e,
-//     });
-//   }
-// }
-//
-// function* watchLoadUser() {
-//   yield takeEvery(LOAD_USER_REQUEST, loadUser);
-// }
+

@@ -33,8 +33,9 @@ const AppLayout = ({ children }) => {
         ? (
           <ul css={headerList}>
             {user.map((ele, ind) => <li key={ind} onClick={() => LoginDummy(ele)}>{ele}</li>)}
+            <li onClick={() => LoginDummy('dumy')}>testUser</li>
             <br />
-            {shop.map((element, ind) => <li key={ind} onClick={() => LoginShopDummy(element, ind + 1)} className="shop">{element}</li>)}
+            {shop.map((element, ind) => <li key={ind} onClick={() => LoginShopDummy(element, ind + 5)} className="shop">{element}</li>)}
             <Link href="/">
               <a css={gotoHome}>
                 <HomeOutlined />

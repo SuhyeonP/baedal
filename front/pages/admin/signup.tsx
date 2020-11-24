@@ -54,12 +54,13 @@ const Signup = () => {
   }, [userId, nick, password, pwCheck]);
 
   const JoinUsShop = useCallback(() => {
-    const master = me.id;
+    console.log('why');
+    const master = document.getElementById('user-ID').value;
     dispatch({
       type: SIGN_UP_SHOP_REQUEST,
       data: { master, shopName, address },
     });
-  }, []);
+  }, [shopName, address]);
 
   return (
     <>
@@ -91,7 +92,7 @@ const Signup = () => {
         : (
           <div css={signup}>
             <Form onFinish={JoinUsShop}>
-              <input hidden name="master" value={me.id} />
+              <input hidden id="user-ID" name="master" value={me.id} />
               <div>
                 <label htmlFor="shopName">상점 이름&nbsp;:&nbsp;</label>
                 <input required name="shopName" value={shopName} onChange={onChangeSN} />
@@ -100,7 +101,7 @@ const Signup = () => {
                 <label htmlFor="address">Address&nbsp;:&nbsp;</label>
                 <input required name="address" value={address} onChange={onChangeAd} />
               </div>
-              <button className="joinBtn">가입하기</button>
+              <button className="joinBtn" typeof="submit">가입하기</button>
             </Form>
           </div>
         )}

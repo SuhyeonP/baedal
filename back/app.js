@@ -7,13 +7,14 @@ const dotenv = require('dotenv');
 const morgan = require('morgan');
 const passportConfig=require('./passport');
 
+
+const shopRouter=require('./routes/shop');
 const userRouter=require('./routes/user');
-
-
+const db = require('./models');
 const app=express();
 
 dotenv.config()
-const db = require('./models');
+
 
 db.sequelize.sync()
   .then(() => {
@@ -43,6 +44,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/user',userRouter);
+app.use('/shop',shopRouter);
 
 app.listen(3050, () => {
   console.log('서버 실행 중!');

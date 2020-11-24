@@ -31,6 +31,10 @@ export const LOG_OUT_REQUEST = 'LOG_OUT_REQUEST';
 export const LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
 export const LOG_OUT_FAILURE = 'LOG_OUT_FAILURE';
 
+export const LOAD_USER_REQUEST = 'LOAD_USER_REQUEST';
+export const LOAD_USER_SUCCESS = 'LOAD_USER_SUCCESS';
+export const LOAD_USER_FAILURE = 'LOAD_USER_FAILURE';
+
 export default (state = initialState, action) => produce(state, (draft) => {
   switch (action.type) {
     case LOG_IN_SHOP_REQUEST:
@@ -83,6 +87,16 @@ export default (state = initialState, action) => produce(state, (draft) => {
     case SIGN_UP_SHOP_SUCCESS: {
       draft.isSigningUp = false;
       draft.isSignedUp = true;
+      break;
+    }
+    case LOAD_USER_REQUEST: {
+      break;
+    }
+    case LOAD_USER_SUCCESS: {
+      draft.me = action.data;
+      break;
+    }
+    case LOAD_USER_FAILURE: {
       break;
     }
     default: {

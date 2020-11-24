@@ -6,6 +6,9 @@ module.exports=(sequelize,DataTypes)=>{
     shopName:{
       type:DataTypes.STRING(10)
     },
+    part:{
+      type:DataTypes.STRING(10)
+    }
   },{
     charset: 'utf8mb4',
     collate: 'utf8mb4_general_ci', // 이모티콘 저장

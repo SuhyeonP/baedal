@@ -7,6 +7,29 @@ const router = express.Router();
 
 const { isLoggedIn, isNotLoggedIn } = require('./middlewares');
 
+router.get('/', async (req, res, next) => { // GET /user
+  try {
+    if (req.user) {
+      const fullUserWithoutPassword = await User.findOne({
+        where: { id: req.user.id },
+        attributes: {
+          exclude: ['password']
+        },
+        include: [{
+          model: Shop,
+          attributes: ['id','shopName','address','master'],
+        }]
+      })
+      res.status(200).json(fullUserWithoutPassword);
+    } else {
+      res.status(200).json(null);
+    }
+  } catch (error) {
+    console.error(error);
+    next(error);
+  }
+});
+
 router.post('/login', isNotLoggedIn, (req, res, next) => {
   passport.authenticate('local', (err, user, info) => {
     if (err) {
@@ -33,27 +56,34 @@ router.post('/login', isNotLoggedIn, (req, res, next) => {
 });
 
 
-router.post('/slogin', isNotLoggedIn, (req, res, next) => {
-  passport.authenticate('local', (err, user, info) => {
-    if (err) {
+router.post('/slogin', (req, res, next) => {
+  passport.authenticate('local',(err,user,info)=>{
+    if(err){
       console.error(err);
-      return next(err);
+      return next(err)
     }
-    if (info) {
-      return res.status(401).send(info.reason);
+    if(info){
+      return res.status(401).send(info.reason)
     }
-    return req.login(user, async (loginErr) => {
-      if (loginErr) {
-        console.error(loginErr);
-        return next(loginErr);
+    return req.login(user,async(loginErr)=>{
+      if(loginErr){
+        console.error(loginErr)
+        return next(loginErr)
       }
-      const shopMaster=await Shop.findOne({
-        where:{master:req.body.master},
-        attributes:['id','master','address','shopName']
+      const client=await User.findOne({
+        where:{id:user.id},
+        attributes:{
+          exclude:['password']
+        }
       })
-      return res.status(200).json(shopMaster);
-    });
-  })(req, res, next);
+      const shop=await Shop.findOne({
+        where:{master:user.id},
+        attributes:['id','master','shopName','address','part']
+      })
+      const LastInfo={client,shop}
+      return res.status(200).json(LastInfo);
+    })
+  })(req,res,next)
 });
 
 
@@ -63,25 +93,27 @@ router.post('/logout', isLoggedIn, (req, res) => {
   res.send('ok');
 });
 
-router.get('/',async(req,res,next)=>{
-  try{
-    if(req.user){
-      const fullAdminWithoutPw=await User.findOne({
-        where:{id:req.user.id},
-        attributes:{
-          exclude:['password']
-        }
-      })
-      res.status(200).json(fullAdminWithoutPw)
-    }else{
-      res.status(200).json(null)
-    }
-  }catch(err){
-    console.error(err);
-    next(err)
-  }
-})
 
+router.post('/shop', isLoggedIn, async (req, res, next) => { // POST /user/
+  try {
+    const shop=await Shop.create({
+      address:req.body.address,
+      master:req.body.master,
+      shopName:req.body.shopName
+    })
+    const complete=await Shop.findOne({
+      where:{id:shop.id},
+      include:[{
+        model:User,
+        attributes:['id','nick']
+      }]
+    })
+    res.status(201).json(complete)
+  } catch (error) {
+    console.error(error);
+    next(error); // status 500
+  }
+});
 router.post('/', isNotLoggedIn, async (req, res, next) => { // POST /user/
   try {
     const exUser = await User.findOne({
@@ -100,30 +132,6 @@ router.post('/', isNotLoggedIn, async (req, res, next) => { // POST /user/
       password: hashedPassword,
     });
     res.status(201).send('ok');
-  } catch (error) {
-    console.error(error);
-    next(error); // status 500
-  }
-});
-
-
-router.post('/shop', isLoggedIn, async (req, res, next) => { // POST /user/
-  try {
-    const shop=await Shop.create({
-      address:req.body.address,
-      master:req.user.id,
-      shopName:req.body.shopName
-    })
-    const complete=await Shop.findOne({
-      where:{id:shop.id},
-      include:[{
-        model:Shop,
-      },{
-        model:User,
-        attributes:['id','nick']
-      }]
-    })
-    res.status(201).json(complete)
   } catch (error) {
     console.error(error);
     next(error); // status 500
