@@ -21,7 +21,6 @@ router.get('/', async (req, res, next) => { // GET /shops
         attributes: ['id', 'nick'],
       }]
     });
-    console.log(shops);
     res.status(200).json(shops);
   } catch (error) {
     console.error(error);

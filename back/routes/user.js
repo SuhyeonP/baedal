@@ -15,13 +15,11 @@ router.get('/', async (req, res, next) => { // GET /user
         attributes: {
           exclude: ['password']
         },
-        include: [{
-          model: Shop,
-          attributes: ['id','shopName','address','master'],
-        }]
       })
-      res.status(200).json(fullUserWithoutPassword);
+      console.log('not null')
+      return res.status(200).json(fullUserWithoutPassword);
     } else {
+      console.log('null')
       res.status(200).json(null);
     }
   } catch (error) {
@@ -80,7 +78,7 @@ router.post('/slogin', (req, res, next) => {
         where:{master:user.id},
         attributes:['id','master','shopName','address','part']
       })
-      const LastInfo={client,shop}
+      const LastInfo=Array(client).concat(Array(shop))
       return res.status(200).json(LastInfo);
     })
   })(req,res,next)

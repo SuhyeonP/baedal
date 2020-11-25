@@ -148,6 +148,7 @@ function loadUserAPI(userId) {
 function* loadUser(action) {
   try {
     const result = yield call(loadUserAPI, action.data);
+    console.log(result.data,"asdf");
     yield put({ // put은 dispatch 동일
       type: LOAD_USER_SUCCESS,
       data: result.data,
@@ -163,7 +164,7 @@ function* loadUser(action) {
 }
 
 function* watchLoadUser() {
-  yield takeEvery(LOAD_USER_REQUEST, loadUser);
+  yield takeLatest(LOAD_USER_REQUEST, loadUser);
 }
 
 export default function* userSaga() {

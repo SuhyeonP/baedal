@@ -20,13 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/pages/_error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/components/logout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/back/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_document.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/reducers/shop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/reducers/shop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/saga/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +40,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -74,11 +76,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Order\front\css\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Order\front\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Order\front\css\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,7 +103,7 @@
       <workItem from="1606193492063" duration="6369000" />
       <workItem from="1606201449294" duration="3172000" />
       <workItem from="1606227143339" duration="3306000" />
-      <workItem from="1606260388291" duration="4716000" />
+      <workItem from="1606260388291" duration="12659000" />
     </task>
     <servers />
   </component>
@@ -147,9 +149,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606201824197" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606204328973">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606271996411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606204328973" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606271996411" />
   </component>
 </project>
