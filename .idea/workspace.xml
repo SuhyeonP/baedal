@@ -33,11 +33,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" afterDir="false" />
-    </list>
+    <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/getserverside" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,8 +139,16 @@
       <workItem from="1606201449294" duration="3172000" />
       <workItem from="1606227143339" duration="3306000" />
       <workItem from="1606260388291" duration="16697000" />
-      <workItem from="1606286802300" duration="1452000" />
+      <workItem from="1606286802300" duration="1600000" />
     </task>
+    <task id="LOCAL-00001" summary="serverside user success now happy">
+      <created>1606288364870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606288364870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +183,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="serverside user success now happy" />
+    <option name="LAST_COMMIT_MESSAGE" value="serverside user success now happy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="827" y="410" key="#ESLint" timestamp="1606274710709">
