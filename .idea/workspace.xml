@@ -20,15 +20,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/front/components/logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/components/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/components/logout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/brown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/mint.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/yellow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/shop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/useInput.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/_app.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/_document.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/api/users/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/users/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/users/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/shop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/shop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/shop.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/components/Layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/saga/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front/saga/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +79,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript JSX" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/with-typescript-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -80,6 +99,9 @@
       <recent name="D:\Order\front\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Order\with-typescript-app" />
+      <recent name="D:\Order\with-typescript-app\components" />
+      <recent name="D:\Order\with-typescript-app\pages" />
       <recent name="D:\Order\front\css\img" />
     </key>
   </component>
@@ -103,7 +125,7 @@
       <workItem from="1606193492063" duration="6369000" />
       <workItem from="1606201449294" duration="3172000" />
       <workItem from="1606227143339" duration="3306000" />
-      <workItem from="1606260388291" duration="12659000" />
+      <workItem from="1606260388291" duration="16341000" />
     </task>
     <servers />
   </component>
@@ -129,10 +151,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="827" y="410" key="#ESLint" timestamp="1606229555123">
+    <state x="827" y="410" key="#ESLint" timestamp="1606274710709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="827" y="410" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606229555123" />
+    <state x="827" y="410" key="#ESLint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606274710709" />
     <state x="586" y="198" key="#Inspections" timestamp="1606102958586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -145,6 +167,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606171465005" />
+    <state x="-1584" y="48" width="1600" height="718" key="dock-window-1" timestamp="1606276486122">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1584" y="48" width="1600" height="718" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606276486122" />
+    <state x="-1584" y="0" width="1600" height="718" key="dock-window-2" timestamp="1606276486122">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1584" y="0" width="1600" height="718" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606276486122" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1606201824197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
