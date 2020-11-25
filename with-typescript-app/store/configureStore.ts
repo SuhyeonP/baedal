@@ -9,9 +9,13 @@ interface IStore extends Store{
     sagaTask?:Task;
 }
 
+const loggerMiddleware = ({ dispatch, getState }) => (next) => (action) => {
+  return next(action);
+};
+
 const configureStore = (initialState) => {
   const sagaMiddleware = createSagaMiddleware();
-  const middlewares = [sagaMiddleware];
+  const middlewares = [sagaMiddleware, loggerMiddleware];
   const enhancer = process.env.NODE_ENV === 'production'
     ? compose(applyMiddleware(...middlewares))
     : composeWithDevTools(applyMiddleware(...middlewares));
