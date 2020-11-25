@@ -22,7 +22,8 @@ export default (state = initialState, action) => produce(state, (draft) => {
       break;
     }
     case LOAD_MAIN_SHOPS_SUCCESS: {
-      draft.mainShops = draft.mainShops.concat(action.data);
+      //draft.mainShops = draft.mainShops.concat(action.data);
+      draft.mainShops = action.data;
       draft.hasMoreShop = action.data.length === 6;
       break;
     }

@@ -2,8 +2,11 @@ import * as React from 'react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { END } from 'redux-saga';
+import axios from 'axios';
 import { shopControl } from '../css/layout';
 import { LOAD_MAIN_SHOPS_REQUEST } from '../reducers/shop';
+import {LOAD_USER_REQUEST} from "../reducers/user";
 // todo 가게마다 관리버튼 만들고 redux로 자기 가계일때 관리하기 되게
 // todo redux로 메인가게 가져올거라서 map돌릴 예정
 const link = 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTAxMjRfMjM4%2FMDAxNTQ4MjU1Nzk3Mjc2.M446tdO5AvW5XVvmH9r9FBcEZ1e2Sze604_5pEiq8Uog.YTfFcx2hliEiIkIjg9-3jBPSm7yxEGqWsmD4l_sUzo0g.JPEG.seooooya%2FIMG_2203.JPG&type=sc960_832';
@@ -13,13 +16,7 @@ const Home = () => {
   const { me } = useSelector((state) => state.user);
   const { mainShops, hasMoreShop } = useSelector((state) => state.shop);
 
-  const [loading, setLoading] = useState(false);
-
   useEffect(() => {
-    setLoading(true);
-  }, []);
-
-  useEffect(() => { // 동작 잘함 :) todo 가게 더미데이터로 스크롤이벤트!!
     function onScroll() {
       if (window.pageYOffset + document.documentElement.clientHeight > document.documentElement.scrollHeight - 300) {
         if (hasMoreShop) {
@@ -63,7 +60,7 @@ const Home = () => {
                 <td>menu2</td>
               </tr>
             </table>
-            {shop
+            {me
               ? (
                 <button css={shopControl} />
               )
@@ -81,9 +78,16 @@ const Home = () => {
 
 Home.getInitialProps = async (context) => {
   console.log(Object.keys(context));
+  const cookie = context.req ? context.req.headers.cookie : '';
+  axios.defaults.headers.Cookie = '';
+  if (context.req && cookie) {
+    axios.defaults.headers.Cookie = cookie;
+  }
   context.store.dispatch({
     type: LOAD_MAIN_SHOPS_REQUEST,
   });
+  context.store.dispatch(END);
+  await context.store.sagaTask.toPromise();
 };
 
 export default Home;

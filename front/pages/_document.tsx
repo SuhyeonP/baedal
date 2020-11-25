@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import Helmet, { HelmetData } from 'react-helmet';
-import Document, { Main, NextScript } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 interface Props {
     helmet: HelmetData,
@@ -22,29 +22,39 @@ class MyDocument extends Document<Props> {
           </>
         ),
       };
+    } finally {
     }
   }
 
   render() {
-    const { htmlAttributes, bodyAttributes, ...helmet } = this.props.helmet;
-    const htmlAttrs = htmlAttributes.toComponent();
-    const bodyAttrs = bodyAttributes.toComponent();
+    // const { htmlAttributes, bodyAttributes, ...helmet } = this.props.helmet;
+    // const htmlAttrs = htmlAttributes.toComponent();
+    // const bodyAttrs = bodyAttributes.toComponent();
 
     return (
-      <html {...htmlAttrs} lang="ko">
-        <head>
-          {this.props.styles}
-          {Object.values(helmet).map((el) => el.toComponent())}
-        </head>
-        <body {...bodyAttrs}>
+      <Html>
+        <Head />
+        <body>
           <Main />
-          {process.env.NODE_ENV === 'production'
-            && <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019" />}
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }
 
 export default MyDocument;
+
+//
+// <html {...htmlAttrs} lang="ko">
+// <head>
+//   {this.props.styles}
+//   {Object.values(helmet).map((el) => el.toComponent())}
+// </head>
+// <body {...bodyAttrs}>
+// <Main />
+// {process.env.NODE_ENV === 'production'
+// && <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2Ces2015%2Ces2016%2Ces2017%2Ces2018%2Ces2019" />}
+// <NextScript />
+// </body>
+// </html>

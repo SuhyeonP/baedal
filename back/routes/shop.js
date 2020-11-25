@@ -18,7 +18,7 @@ router.get('/', async (req, res, next) => { // GET /shops
       ],
       include: [{
         model: User,
-        attributes: ['id', 'nickname'],
+        attributes: ['id', 'nick'],
       }]
     });
     console.log(shops);
