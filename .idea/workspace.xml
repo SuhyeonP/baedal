@@ -15,39 +15,28 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/feature/getserverside" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d204a0b-0a53-48fe-9a47-78cdf30f8565" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/components/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/components/logout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/brown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/mint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/img/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/layout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/shop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/css/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/props.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/exporthing/useInput.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/_app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/_document.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/api/users/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/users/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/pages/users/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/shop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/reducers/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/shop.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/saga/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/with-typescript-app/reducers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/with-typescript-app/store/configureStore.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,10 +54,38 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/getserverside" />
+                    <option name="lastUsedInstant" value="1606286916" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1606286915" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1kdey0eGP64d6PESHAhU2Cbq0xl" />
   <component name="ProjectViewState">
@@ -91,7 +108,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
-    <property name="ts.external.directory.path" value="D:\Order\front\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Order\with-typescript-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -125,7 +142,8 @@
       <workItem from="1606193492063" duration="6369000" />
       <workItem from="1606201449294" duration="3172000" />
       <workItem from="1606227143339" duration="3306000" />
-      <workItem from="1606260388291" duration="16341000" />
+      <workItem from="1606260388291" duration="16697000" />
+      <workItem from="1606286802300" duration="1452000" />
     </task>
     <servers />
   </component>
@@ -143,7 +161,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/feature/getserverside" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -159,6 +189,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606102958586" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606287025277">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606287025277" />
     <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606204098588">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -167,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606171465005" />
-    <state x="-1584" y="48" width="1600" height="718" key="dock-window-1" timestamp="1606276486122">
+    <state x="-1581" y="0" width="1597" height="711" key="dock-window-1" timestamp="1606287342465">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1584" y="48" width="1600" height="718" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606276486122" />
+    <state x="-1581" y="0" width="1597" height="711" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606287342465" />
     <state x="-1584" y="0" width="1600" height="718" key="dock-window-2" timestamp="1606276486122">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
